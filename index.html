@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Budget Calculator</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <main>
+        <h1>50/30/20 Budget calculator</h1>
+        <form id="budget-calculator-form">
+            <label for="amount">Amount: </label>
+            <input type="number" id="amount" name="amount" placeholder="Please enter an amount..." required />
+            <button type="submit" name="calculate-budget">Calculate Budget</button>
+        </form>
+
+        <section id="budget-summary">
+            <h2>Your Budget according to 50/30/20 rule is</h2>
+            <p>The available expense for need: Rs. <span id="expense-for-need">0</span></p>
+            <p>The available expense for want: Rs. <span id="expense-for-want">0</span></p>
+            <p>Savings: Rs. <span id="amount-to-save">0</span></p>
+        </section>
+    </main>
+
+    <script src="budget-calculator.js"></script>
+
+</body>
+
+</html>
