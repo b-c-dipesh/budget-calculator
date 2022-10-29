@@ -2,7 +2,7 @@ import { useState } from 'react';
 import './App.css';
 
 function App() {
-	const [amount, setAmount] = useState(0);
+	const [amount, setAmount] = useState(null);
 	const [budget, setBudget] = useState({
 		need: 0,
 		want: 0,
